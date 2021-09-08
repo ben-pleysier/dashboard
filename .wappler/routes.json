@@ -1,0 +1,30 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "url": "/index.html",
+      "name": "home",
+      "routes": [
+        {
+          "type": "page",
+          "path": "/",
+          "id": "home",
+          "url": "_home.html",
+          "exact": "true"
+        },
+        {
+          "type": "page",
+          "path": "/about",
+          "id": "about",
+          "url": "_about.html"
+        },
+        {
+          "type": "page",
+          "path": "/contact",
+          "id": "contact",
+          "url": "_contact.html"
+        }
+      ]
+    }
+  ]
+}

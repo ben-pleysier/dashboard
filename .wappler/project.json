@@ -1,0 +1,33 @@
+{
+  "projectName": "dashboard",
+  "styleFile": "/css/style.css",
+  "assetsFolder": "/assets",
+  "designFramework": "bootstrap5",
+  "frameworks": [
+    {
+      "name": "appConnect",
+      "type": "local"
+    },
+    {
+      "name": "bootstrap5",
+      "type": "local"
+    },
+    {
+      "name": "bootstrap_icons",
+      "type": "local"
+    }
+  ],
+  "projectServerModel": "PHP",
+  "activeTarget": "development",
+  "useRouting": true,
+  "addBase": true,
+  "routingHandler": "apache",
+  "projectType": "web",
+  "targets": [
+    {
+      "access": "local",
+      "name": "development",
+      "remoteURL": "http://localhost/dashboard"
+    }
+  ]
+}
