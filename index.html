@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer=""></script>
+    <script src="dmxAppConnect/dmxRouting/dmxRouting.js" defer=""></script>
 </head>
 
 <body is="dmx-app" id="index">
@@ -22,14 +23,15 @@
             <div class="row">
                 <div class="col">
                     <nav class="navbar navbar-expand-lg justify-content-end bg-transparent navbar-dark">
-                        <a class="navbar-brand me-auto" href="index.html">Navbar</a>
+                        <a class="navbar-brand me-auto" href="./">Navbar</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1_collapse" aria-controls="navbar1_collapse" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse justify-content-end" id="navbar1_collapse">
                             <div class="navbar-nav">
-                                <a class="nav-item nav-link active" href="index.html">Home</a>
-                                <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+                                <a class="nav-item nav-link active" href="./">Home</a>
+                                <a class="nav-item nav-link" href="./about">About</a>
+                                <a class="nav-item nav-link" href="./gallery">Gallery</a>
                             </div>
                         </div>
                     </nav>
@@ -37,16 +39,10 @@
             </div>
         </div>
     </header>
-    <div class="container wappler-block pt-5 pb-5">
-        <div class="row">
-            <div class="text-center col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-                <h1>Welcome to my 6.9<br></h1>
-                <p>A nice paragraph</p>
-                <button class="btn btn-primary mb-3">Button</button>
-                <img class="wappler-type-picture w-100 img-fluid" src="assets/images/cp5103156456825408656.jpg">
-            </div>
-        </div>
-    </div>
+    <div is="dmx-route" path="/" url="_home.html" id="home" exact="true"></div>
+    <div is="dmx-route" path="/about" url="_about.html" id="about"></div>
+    <div is="dmx-route" path="/gallery" url="_gallery.html" id="gallery"></div>
+
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 </body>
 

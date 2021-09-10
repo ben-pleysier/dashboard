@@ -20,9 +20,9 @@
         },
         {
           "type": "page",
-          "path": "/contact",
-          "id": "contact",
-          "url": "_contact.html"
+          "path": "/gallery",
+          "id": "gallery",
+          "url": "_gallery.html"
         }
       ]
     }
