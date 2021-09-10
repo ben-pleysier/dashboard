@@ -9,5 +9,7 @@ RewriteRule ^/?(?:/)?$ index.html [QSA,NC,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^/?(?:/)?$ index.html [QSA,NC,L]
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^/?about(?:/)?$ index.html [QSA,NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^/?gallery(?:/)?$ index.html [QSA,NC,L]
 ## End Wappler routing

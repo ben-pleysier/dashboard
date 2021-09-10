@@ -14,6 +14,12 @@
         },
         {
           "type": "page",
+          "path": "/about",
+          "id": "about",
+          "url": "_about.html"
+        },
+        {
+          "type": "page",
           "path": "/gallery",
           "id": "gallery",
           "url": "_gallery.html"
